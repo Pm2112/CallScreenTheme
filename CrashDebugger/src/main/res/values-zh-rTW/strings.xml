@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:override="true"
+    tools:ignore="MissingTranslation,PrivateResource">
+
+    <string name="toolbar_title">應用程式發生錯誤</string>
+    <string name="manufacturer">製造商</string>
+    <string name="device">型號</string>
+    <string name="sdk_version">SDK 版本</string>
+    <string name="android_version">Android 版本</string>
+    <string name="incremental">內部識別碼</string>
+    <string name="app_version">應用程式版本</string>
+    <string name="crash_time">發生時間</string>
+    <string name="crash_message">錯誤報告</string>
+
+    <string name="snackbar_copy_to_clipboard">已複製至剪貼簿。</string>
+
+</resources>

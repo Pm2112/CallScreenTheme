@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.OnboardActivity">
+
+    <ImageView
+        android:id="@+id/load_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/onboard_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/home_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/onboard_ads"/>
+
+    <LinearLayout
+        android:id="@+id/layout_dot_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/onboard_view_pager"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/onboard_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboard_btn_text"
+        android:textSize="16sp"
+        android:textColor="@color/topic_active"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/onboard_view_pager"
+        />
+
+    <FrameLayout
+        android:id="@+id/onboard_ads"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

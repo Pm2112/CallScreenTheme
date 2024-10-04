@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332059342845",
+    "project_id": "tpas---screen-call-theme",
+    "storage_bucket": "tpas---screen-call-theme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332059342845:android:c48d024a3428f5db5f0b94",
+        "android_client_info": {
+          "package_name": "color.call.screen.theme.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnlZXEt34zKGgzI2o_hTLp_u84xooiRvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

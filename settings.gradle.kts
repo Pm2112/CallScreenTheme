@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 dependencyResolutionManagement {
@@ -16,7 +17,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
-rootProject.name = "CallScreenTheme"
+rootProject.name = "CallScreenApp"
+include(":app")
+include(":whaleutils")
+include(":CrashDebugger")
+
+ 

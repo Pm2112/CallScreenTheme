@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_image_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ShowImageActivity">
+
+    <ImageView
+        android:id="@+id/show_image_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/show_image_activity_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/icon_btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/show_image_activity_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="15dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/icon_btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/show_image_activity_btn_hide_avatar"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="33dp"-->
+    <!--        android:layout_marginEnd="15dp"-->
+    <!--        android:importantForAccessibility="no"-->
+    <!--        android:src="@drawable/icon_btn_submit"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/show_image_activity_btn_submit"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        />-->
+
+    <ImageView
+        android:id="@+id/show_image_activity_avatar"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="85dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/icon_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/show_image_activity_btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:src="@drawable/icon_btn_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/show_image_activity_avatar"
+        app:layout_constraintEnd_toEndOf="@+id/show_image_activity_avatar" />
+
+    <TextView
+        android:id="@+id/show_image_activity_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/dialer_name"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/show_image_activity_user_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:text="+98-3012-3456-7890"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_image_activity_user_name" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_image_activity_menu_option"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- Pulsator Layout for the green icon -->
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator_green"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            app:pulse_count="4"
+            app:pulse_duration="2000"
+            app:pulse_color="@color/white"
+            app:pulse_repeat="0"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="AccelerateDecelerate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/show_image_activity_icon_green"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:importantForAccessibility="no"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/icon_call_green" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <!-- Pulsator Layout for the red icon -->
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator_red"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            app:pulse_count="4"
+            app:pulse_duration="2000"
+            app:pulse_color="@color/white"
+            app:pulse_repeat="0"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="AccelerateDecelerate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/show_image_activity_icon_red"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/icon_call_red" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/show_image_activity_list_call_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_image_activity_menu_option" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/show_image_activity_menu_option"
+        android:name="com.example.callscreenapp.ui.fragment.MenuOptionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:override="true"
+    tools:ignore="MissingTranslation,PrivateResource">
+    <string name="app_name">Crash Debugger</string>
+
+    <string name="toolbar_title">App crashed</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="device">Device</string>
+    <string name="sdk_version">SDK Version</string>
+    <string name="android_version">Android Version</string>
+    <string name="incremental">Incremental</string>
+    <string name="app_version">App Version</string>
+    <string name="crash_time">Date</string>
+    <string name="crash_message">Messages</string>
+
+    <string name="snackbar_copy_to_clipboard">Copied to clipboard.</string>
+
+</resources>

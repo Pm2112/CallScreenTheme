@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "CategoryAnimeSize",
+    "number": 33
+  },
+  {
+    "id": 2,
+    "name": "CategoryLoveSize",
+    "number": 8
+  },
+  {
+    "id": 3,
+    "name": "CategoryAnimalSize",
+    "number": 36
+  },
+  {
+    "id": 4,
+    "name": "CategoryNatureSize",
+    "number": 24
+  },
+  {
+    "id": 5,
+    "name": "CategoryGameSize",
+    "number": 23
+  },
+  {
+    "id": 6,
+    "name": "CategoryCastleSize",
+    "number": 25
+  },
+  {
+    "id": 7,
+    "name": "CategoryFantasySize",
+    "number": 8
+  },
+  {
+    "id": 8,
+    "name": "CategoryTechSize",
+    "number": 16
+  },
+  {
+    "id": 9,
+    "name": "CategorySeaSize",
+    "number": 12
+  },
+  {
+    "id": 10,
+    "name": "ButtonCallSize",
+    "number": 15
+  },
+  {
+    "id": 11,
+    "name": "AvatarSize",
+    "number": 15
+  },
+  {
+    "id": 12,
+    "name": "AllSize",
+    "number": 202
+  },
+  {
+    "id": 13,
+    "name": "GifSize",
+    "number": 17
+  },
+  {
+    "id": 14,
+    "name": "ButtonAllSize",
+    "number": 15
+  }
+]

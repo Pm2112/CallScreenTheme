@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".SubscriptionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="594:152"
+                app:layout_constraintStart_toStartOf="@+id/ivDes"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@drawable/sub_text1" />
+
+            <ImageView
+                android:id="@+id/ivOnlinePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivTitle"
+                app:srcCompat="@drawable/online_payment" />
+
+            <ImageView
+                android:id="@+id/ivDes"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="640:308"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivOnlinePayment"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@drawable/sub_text2week" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnYearly"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="680:120"
+                app:layout_constraintEnd_toEndOf="@+id/ivDes"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/ivDes"
+                app:layout_constraintTop_toBottomOf="@+id/ivDes"
+                app:layout_constraintWidth_percent="0.8">
+
+                <ImageView
+                    android:id="@+id/btnYearlyBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/btn_sub_normal_bg" />
+
+                <TextView
+                    android:id="@+id/tv_sub_3_days"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:text="@string/tv_year_3_days_free_trial_then"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_sub_year_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/tv_year_price"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <ImageView
+                    android:id="@+id/save_80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:srcCompat="@drawable/iconsave80" />
+
+                <TextView
+                    android:id="@+id/tv_sub_year_price_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:text="@string/tv_year_price_sale"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/save_80" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnWeekly"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="680:120"
+                app:layout_constraintEnd_toEndOf="@+id/ivDes"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/ivDes"
+                app:layout_constraintTop_toBottomOf="@+id/btnYearly"
+                app:layout_constraintWidth_percent="0.8">
+
+                <ImageView
+                    android:id="@+id/btnWeeklyBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/btn_sub_normal_bg" />
+
+                <TextView
+                    android:id="@+id/tv_sub_week_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/tv_week_title"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_sub_week_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/tv_week_price"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnLifetime"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintDimensionRatio="680:120"
+                app:layout_constraintEnd_toEndOf="@+id/ivDes"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/ivDes"
+                app:layout_constraintTop_toBottomOf="@+id/btnWeekly"
+                app:layout_constraintWidth_percent="0.8">
+
+                <ImageView
+                    android:id="@+id/btnLifetimeBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/btn_sub_normal_bg" />
+
+                <TextView
+                    android:id="@+id/tv_sub_lifetime_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:text="@string/tv_lifetime_title"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_sub_lifetime_des"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/sf_pro_text_light"
+                    android:text="@string/tv_lifetime_des"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <ImageView
+                    android:id="@+id/ic_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_sub_lifetime_title"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sub_lifetime_title"
+                    app:layout_constraintTop_toTopOf="@+id/tv_sub_lifetime_title"
+                    app:srcCompat="@drawable/iconpremium" />
+
+                <TextView
+                    android:id="@+id/tv_sub_lifetime_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/sf_pro_text_bold"
+                    android:text="@string/tv_lifetime_price"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/btnTryTrial"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintDimensionRatio="680:120"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLifetime"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@drawable/btnsubscribenox" />
+
+            <Button
+                android:id="@+id/btnRestore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:text="@string/text_restore"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnTryTrial" />
+
+            <Button
+                android:id="@+id/btnTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_term"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/btnTryTrial"
+                app:layout_constraintTop_toTopOf="@+id/btnRestore" />
+
+            <Button
+                android:id="@+id/btnPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_privacy_policy"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/btnTryTrial"
+                app:layout_constraintTop_toTopOf="@+id/btnRestore" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_light"
+                android:paddingBottom="55dp"
+                android:text="@string/sub_text_des"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/btnTryTrial"
+                app:layout_constraintStart_toStartOf="@+id/btnTryTrial"
+                app:layout_constraintTop_toBottomOf="@+id/btnRestore" />
+
+            <ImageView
+                android:id="@+id/btnX"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sub_btnx" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
